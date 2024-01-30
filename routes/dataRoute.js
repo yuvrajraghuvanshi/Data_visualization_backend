@@ -2,7 +2,7 @@ const { getData, filterByYear, filterByTopic, filterByTitle, filterByCountry, fi
 const express=require('express')
 const router=express.Router()
 
-router.get('/data',getData)
+router.get('/all',getData)
 router.get('/year/:year',filterByYear)
 router.get('/topic/:topic',filterByTopic)
 router.get('/title/:title',filterByTitle)

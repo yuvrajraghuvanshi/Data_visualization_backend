@@ -11,7 +11,7 @@ app.use(express.json())
 app.use(express.urlencoded({extended:true}))
 
 mongoDb() 
-app.use('/api',router)
+app.use('/api/data',router)
 
 const PORT=process.env.PORT
 app.listen(PORT || 5000,()=>{
